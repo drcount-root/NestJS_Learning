@@ -6,8 +6,22 @@ To generate module:
 To generate controller:
 `nest g controller controller-name`
 
+To generate service:
+`nest g service service-name`
+
+To generate rating service inside auth module services folder:
+`nest g service rating auth/services`
+
 Help:
 `nest --help`
 
 To run the app:
 `pnpm run start:dev`
+
+---
+
+### Flow
+
+User(view) => Middleware => Routes => Controller => Service => DB
+
+Middlewares, Routes, Controller, Services all are part of each modules.
